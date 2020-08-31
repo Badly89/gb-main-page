@@ -1,3 +1,6 @@
+*{
+  font-family: "Roboto", sans-serif; 
+}
 .container{
     max-width: 1376px;
     margin: 0 auto;
@@ -29,9 +32,13 @@
   .parent:hover::after {
     background: rgba(255, 255, 255, .3);
   } 
+  svg{
+    fill: rgba(80,102,123,.2);
+  }
  
  .parent-margin{
-     margin-bottom: 50px;
+    margin: 50px;
+
  }
   .label {
     color: white;
@@ -68,12 +75,13 @@
   .info{
     color: rgba(80,102,123,.5);
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin: 0;
     
   }
 
+  .new-blog-content{
+    margin-left: 10px;
+  }
 
 
   .category{
@@ -171,12 +179,15 @@
   }
     
   .h3{
-    margin: -4px 0 4px;
+    /* margin: -4px 0 4px; */
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     color: #3f5368;
-    margin: 0 0 0 12px;
+    margin: 0;
+    /* margin: 0 0 0 12px; */
+
+
     
     
   }
@@ -210,6 +221,7 @@
   }
   .main-content{
     background-color: #f4f5fa;
+    
   }
   .text-answer{
     margin: 0 4px;
@@ -225,5 +237,95 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
+    color: #3f5368;
+  }
+  .block-vp{
+    width: 100%;
+    display: flex;
+  }
+
+  .vacans{
+    width: 66.6%;
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  .vacans h2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 24px;
+    color: #3f5368;
+  }
+
+.vacan-columns{
+  display: flex;
+}
+.column-block{
+  /* width: 50%; */
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+
+}
+.row-column {
+display: flex;
+padding-bottom: 24px;
+/* flex-direction: column; */
+}
+.row-column img{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 0;
+  
+}
+.row-vac-text {
+  margin-left: 15px;
+}
+.row-vac-text h3{
+  font-size: 17px;
+    line-height: 24px;
+    
+    font-weight: 500;
+    margin: 0 0 4px;
+}
+
+.row-vac-text p{
+  font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    color: rgba(80,102,123,.5);
+}
+
+.row-vac-text p span:not(:first-child):before {
+  content: "•";
+    display: inline-block;
+    margin: 0 5px;
+}
+.price{
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #08d092;
+  text-transform: uppercase;
+}
+.price span {
+  margin-left: 5px;
+}
+
+  .project{
+    width: 33.3%;
+  }
+  .project h2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
     color: #3f5368;
   }
